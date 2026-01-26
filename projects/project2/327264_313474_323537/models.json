@@ -1,0 +1,513 @@
+[
+  {
+    "name": "model_0",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "weights": "distance",
+      "p": 1,
+      "n_neighbors": 23
+    }
+  },
+  {
+    "name": "model_1",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "learning_rate": 0.19212959255386386,
+      "colsample_bytree": 0.8391599915244341,
+      "subsample": 0.8083337040103294,
+      "min_child_samples": 76,
+      "num_leaves": 230,
+      "n_estimators": 561
+    }
+  },
+  {
+    "name": "model_2",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "learning_rate": 0.22648248189516837,
+      "subsample": 0.7783331011414365,
+      "n_estimators": 120,
+      "min_child_samples": 76,
+      "num_leaves": 118,
+      "colsample_bytree": 0.749816047538945
+    }
+  },
+  {
+    "name": "model_3",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "min_child_samples": 39,
+      "learning_rate": 0.05782029066113448,
+      "colsample_bytree": 0.679536961635522,
+      "num_leaves": 138,
+      "subsample": 0.6296178606936361,
+      "n_estimators": 388
+    }
+  },
+  {
+    "name": "model_4",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "colsample_bytree": 0.8245108790277985,
+      "learning_rate": 0.08124173472387217,
+      "num_leaves": 222,
+      "subsample": 0.7710164073434198,
+      "min_child_samples": 31,
+      "n_estimators": 492
+    }
+  },
+  {
+    "name": "model_5",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "learning_rate": 0.12202294929332946,
+      "min_child_samples": 48,
+      "n_estimators": 261,
+      "colsample_bytree": 0.6125253169822235,
+      "num_leaves": 217,
+      "subsample": 0.9579309401710595
+    }
+  },
+  {
+    "name": "model_6",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "learning_rate": 0.018785426399210617,
+      "min_child_samples": 68,
+      "subsample": 0.9439761626945282,
+      "n_estimators": 604,
+      "colsample_bytree": 0.6798695128633439,
+      "num_leaves": 146
+    }
+  },
+  {
+    "name": "model_7",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "subsample": 0.9043140194467589,
+      "min_child_samples": 51,
+      "colsample_bytree": 0.9548850970305306,
+      "learning_rate": 0.014782014634883787,
+      "n_estimators": 561,
+      "num_leaves": 146
+    }
+  },
+  {
+    "name": "model_8",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "min_child_samples": 93,
+      "n_estimators": 660,
+      "learning_rate": 0.0199473547030745,
+      "colsample_bytree": 0.7216968971838151,
+      "subsample": 0.8447411578889518,
+      "num_leaves": 234
+    }
+  },
+  {
+    "name": "model_9",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "subsample": 0.7427013306774357,
+      "num_leaves": 39,
+      "n_estimators": 152,
+      "colsample_bytree": 0.9844688097397396,
+      "min_child_samples": 86,
+      "learning_rate": 0.12359837100238594
+    }
+  },
+  {
+    "name": "model_10",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "n_estimators": 747,
+      "subsample": 0.6056319290860338,
+      "num_leaves": 231,
+      "colsample_bytree": 0.6062545626964776,
+      "learning_rate": 0.011189657849413857,
+      "min_child_samples": 5
+    }
+  },
+  {
+    "name": "model_11",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "subsample": 0.6733618039413735,
+      "num_leaves": 203,
+      "learning_rate": 0.21130455749498972,
+      "min_child_samples": 6,
+      "colsample_bytree": 0.8887995089067299,
+      "n_estimators": 291
+    }
+  },
+  {
+    "name": "model_12",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "min_child_samples": 10,
+      "learning_rate": 0.07432275581408651,
+      "colsample_bytree": 0.672894435115225,
+      "n_estimators": 665,
+      "num_leaves": 121,
+      "subsample": 0.8270801311279966
+    }
+  },
+  {
+    "name": "model_13",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "num_leaves": 30,
+      "colsample_bytree": 0.7123738038749523,
+      "min_child_samples": 45,
+      "subsample": 0.6661067756252009,
+      "learning_rate": 0.022096526145513842,
+      "n_estimators": 256
+    }
+  },
+  {
+    "name": "model_14",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "num_leaves": 104,
+      "n_estimators": 487,
+      "learning_rate": 0.013059942723945665,
+      "colsample_bytree": 0.8721230154351118,
+      "subsample": 0.9862528132298237,
+      "min_child_samples": 22
+    }
+  },
+  {
+    "name": "model_15",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "num_leaves": 165,
+      "learning_rate": 0.013728250383906291,
+      "n_estimators": 230,
+      "subsample": 0.6225646316108401,
+      "min_child_samples": 28,
+      "colsample_bytree": 0.6399899663272012
+    }
+  },
+  {
+    "name": "model_16",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "max_features": "sqrt",
+      "min_samples_leaf": 1,
+      "max_depth": 16,
+      "n_estimators": 720
+    }
+  },
+  {
+    "name": "model_17",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "max_depth": 13,
+      "n_estimators": 684,
+      "max_features": null,
+      "min_samples_leaf": 3
+    }
+  },
+  {
+    "name": "model_18",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "max_depth": 12,
+      "n_estimators": 330,
+      "max_features": null,
+      "min_samples_leaf": 4
+    }
+  },
+  {
+    "name": "model_19",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "min_samples_leaf": 2,
+      "max_features": "log2",
+      "max_depth": 10,
+      "n_estimators": 439
+    }
+  },
+  {
+    "name": "model_20",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "min_samples_leaf": 8,
+      "max_features": null,
+      "n_estimators": 661,
+      "max_depth": 17
+    }
+  },
+  {
+    "name": "model_21",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "max_depth": 13,
+      "n_estimators": 584,
+      "max_features": null,
+      "min_samples_leaf": 3
+    }
+  },
+  {
+    "name": "model_22",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "min_samples_leaf": 6,
+      "max_depth": 13,
+      "n_estimators": 485,
+      "max_features": "log2"
+    }
+  },
+  {
+    "name": "model_23",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "max_depth": 12,
+      "n_estimators": 763,
+      "max_features": null,
+      "min_samples_leaf": 4
+    }
+  },
+  {
+    "name": "model_24",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "colsample_bytree": 0.6488152939379115,
+      "subsample": 0.7564242430292963,
+      "min_child_samples": 51,
+      "learning_rate": 0.016850517723339085,
+      "num_leaves": 221,
+      "n_estimators": 134
+    }
+  },
+  {
+    "name": "model_25",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "colsample_bytree": 0.9233589392465844,
+      "num_leaves": 107,
+      "min_child_samples": 57,
+      "subsample": 0.7760609974958406,
+      "learning_rate": 0.0056828375585122656,
+      "n_estimators": 439
+    }
+  },
+  {
+    "name": "model_26",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "max_depth": 9,
+      "max_features": null,
+      "min_samples_leaf": 3,
+      "n_estimators": 405
+    }
+  },
+  {
+    "name": "model_27",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "min_samples_leaf": 12,
+      "max_features": null,
+      "max_depth": 16,
+      "n_estimators": 708
+    }
+  },
+  {
+    "name": "model_28",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "min_samples_leaf": 8,
+      "max_features": null,
+      "n_estimators": 561,
+      "max_depth": 17
+    }
+  },
+  {
+    "name": "model_29",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "max_depth": 18,
+      "min_samples_leaf": 8,
+      "n_estimators": 487,
+      "max_features": "log2"
+    }
+  },
+  {
+    "name": "model_30",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "n_estimators": 539,
+      "min_samples_leaf": 2,
+      "max_features": "log2",
+      "max_depth": 10
+    }
+  },
+  {
+    "name": "model_31",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "max_depth": 18,
+      "n_estimators": 587,
+      "min_samples_leaf": 8,
+      "max_features": "log2"
+    }
+  },
+  {
+    "name": "model_32",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "penalty": "l1",
+      "C": 69.58780103230357,
+      "max_iter": 2000,
+      "solver": "liblinear"
+    }
+  },
+  {
+    "name": "model_33",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "max_iter": 2000,
+      "penalty": "l2",
+      "C": 9.877700294007912,
+      "solver": "liblinear"
+    }
+  },
+  {
+    "name": "model_34",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "max_features": "sqrt",
+      "min_samples_leaf": 7,
+      "max_depth": 9,
+      "n_estimators": 221
+    }
+  },
+  {
+    "name": "model_35",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 9,
+      "p": 1,
+      "weights": "uniform"
+    }
+  },
+  {
+    "name": "model_36",
+    "class": "sklearn.svm.LinearSVC",
+    "params": {
+      "C": 9.877700294007912
+    }
+  },
+  {
+    "name": "model_37",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 5,
+      "p": 1,
+      "weights": "uniform"
+    }
+  },
+  {
+    "name": "model_38",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 305,
+      "max_depth": 9,
+      "max_features": null,
+      "min_samples_leaf": 3
+    }
+  },
+  {
+    "name": "model_39",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 5,
+      "p": 2,
+      "weights": "uniform"
+    }
+  },
+  {
+    "name": "model_40",
+    "class": "sklearn.svm.LinearSVC",
+    "params": {
+      "C": 15.741890047456636
+    }
+  },
+  {
+    "name": "model_41",
+    "class": "sklearn.svm.LinearSVC",
+    "params": {
+      "C": 1.7718847354806815
+    }
+  },
+  {
+    "name": "model_42",
+    "class": "sklearn.svm.LinearSVC",
+    "params": {
+      "C": 2.4658329458549098
+    }
+  },
+  {
+    "name": "model_43",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "min_samples_leaf": 12,
+      "max_features": null,
+      "max_depth": 16,
+      "n_estimators": 608
+    }
+  },
+  {
+    "name": "model_44",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "n_estimators": 762,
+      "max_features": null,
+      "min_samples_leaf": 15,
+      "max_depth": 11
+    }
+  },
+  {
+    "name": "model_45",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 4,
+      "weights": "distance",
+      "p": 2
+    }
+  },
+  {
+    "name": "model_46",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "weights": "distance",
+      "p": 1,
+      "n_neighbors": 18
+    }
+  },
+  {
+    "name": "model_47",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "weights": "distance",
+      "p": 1,
+      "n_neighbors": 24
+    }
+  },
+  {
+    "name": "model_48",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "weights": "distance",
+      "p": 1,
+      "n_neighbors": 17
+    }
+  },
+  {
+    "name": "model_49",
+    "class": "sklearn.svm.LinearSVC",
+    "params": {
+      "C": 0.40428727350273314
+    }
+  }
+]
