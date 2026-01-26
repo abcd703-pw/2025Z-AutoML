@@ -1,0 +1,6 @@
+{
+  "selection_strategy": "stability",
+  "cv": 4,
+  "n_ensemble": 1,
+  "stability_threshold": 0.15599452033620265
+}

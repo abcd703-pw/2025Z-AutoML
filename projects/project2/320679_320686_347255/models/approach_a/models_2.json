@@ -1,0 +1,381 @@
+[
+  {
+    "name": "knn_100_ds_1590",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 50,
+      "weights": "distance",
+      "metric": "manhattan"
+    }
+  },
+  {
+    "name": "knn_100_ds_1461",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 49,
+      "weights": "distance",
+      "metric": "minkowski",
+      "p": 1
+    }
+  },
+  {
+    "name": "knn_100_ds_24",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 21,
+      "weights": "distance",
+      "metric": "manhattan"
+    }
+  },
+  {
+    "name": "knn_100_ds_40945",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 36,
+      "weights": "distance",
+      "metric": "manhattan"
+    }
+  },
+  {
+    "name": "knn_100_ds_31",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 48,
+      "weights": "distance",
+      "metric": "manhattan"
+    }
+  },
+  {
+    "name": "knn_100_ds_44",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 21,
+      "weights": "distance",
+      "metric": "minkowski",
+      "p": 1
+    }
+  },
+  {
+    "name": "knn_100_ds_1464",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 16,
+      "weights": "uniform",
+      "metric": "manhattan"
+    }
+  },
+  {
+    "name": "knn_100_ds_37",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 36,
+      "weights": "distance",
+      "metric": "manhattan"
+    }
+  },
+  {
+    "name": "knn_100_ds_3",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 21,
+      "weights": "distance",
+      "metric": "minkowski",
+      "p": 1
+    }
+  },
+  {
+    "name": "knn_100_ds_59",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 12,
+      "weights": "distance",
+      "metric": "manhattan"
+    }
+  },
+  {
+    "name": "rf_100_ds_1590",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 1471,
+      "bootstrap": false,
+      "max_features": 0.34903549552546664,
+      "min_samples_split": 0.00929818113453678
+    }
+  },
+  {
+    "name": "rf_100_ds_1461",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 1365,
+      "bootstrap": true,
+      "max_features": 0.7813497263458493,
+      "min_samples_split": 0.0072331986270003455
+    }
+  },
+  {
+    "name": "rf_100_ds_24",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 1721,
+      "bootstrap": true,
+      "max_features": 0.4197220739170936,
+      "min_samples_split": 0.009528446983667893
+    }
+  },
+  {
+    "name": "rf_100_ds_40945",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 975,
+      "bootstrap": false,
+      "max_features": 0.4141891775434967,
+      "min_samples_split": 0.08833256232832636
+    }
+  },
+  {
+    "name": "rf_100_ds_31",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 1235,
+      "bootstrap": true,
+      "max_features": 0.33847564256947005,
+      "min_samples_split": 0.03271365492387722
+    }
+  },
+  {
+    "name": "rf_100_ds_44",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 910,
+      "bootstrap": false,
+      "max_features": 0.3827063639906717,
+      "min_samples_split": 0.007060166669286943
+    }
+  },
+  {
+    "name": "rf_100_ds_1464",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 1050,
+      "bootstrap": false,
+      "max_features": 0.7994932137702655,
+      "min_samples_split": 0.3713190497599853
+    }
+  },
+  {
+    "name": "rf_100_ds_37",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 1655,
+      "bootstrap": true,
+      "max_features": 0.6547173217552884,
+      "min_samples_split": 0.1326884184692179
+    }
+  },
+  {
+    "name": "rf_100_ds_3",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 543,
+      "bootstrap": false,
+      "max_features": 0.44798217939160906,
+      "min_samples_split": 0.008125211261238854
+    }
+  },
+  {
+    "name": "rf_100_ds_59",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 1700,
+      "bootstrap": false,
+      "max_features": 0.345684755540929,
+      "min_samples_split": 0.011087147989868158
+    }
+  },
+  {
+    "name": "lr_100_ds_1590",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 43.87569286298527,
+      "solver": "lbfgs"
+    }
+  },
+  {
+    "name": "lr_100_ds_1461",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 99.96898279874642,
+      "solver": "liblinear",
+      "penalty_liblinear": "l1"
+    }
+  },
+  {
+    "name": "lr_100_ds_24",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 94.80892014374159,
+      "solver": "liblinear",
+      "penalty_liblinear": "l1"
+    }
+  },
+  {
+    "name": "lr_100_ds_40945",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 0.28553065117745574,
+      "solver": "lbfgs"
+    }
+  },
+  {
+    "name": "lr_100_ds_31",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 1.0121562425230706,
+      "solver": "liblinear",
+      "penalty_liblinear": "l2"
+    }
+  },
+  {
+    "name": "lr_100_ds_44",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 13.764245581699221,
+      "solver": "saga",
+      "penalty_saga": "l1"
+    }
+  },
+  {
+    "name": "lr_100_ds_1464",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 1.8723510468250868,
+      "solver": "saga",
+      "penalty_saga": "l1"
+    }
+  },
+  {
+    "name": "lr_100_ds_37",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 2.5342889946918303,
+      "solver": "lbfgs"
+    }
+  },
+  {
+    "name": "lr_100_ds_3",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 7.624110719630189,
+      "solver": "saga",
+      "penalty_saga": "l1"
+    }
+  },
+  {
+    "name": "lr_100_ds_59",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 1.7710549922394025,
+      "solver": "lbfgs"
+    }
+  },
+  {
+    "name": "dt_100_ds_1590",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+      "ccp_alpha": 0.0001065177239257506,
+      "max_depth": 12,
+      "min_samples_leaf": 29,
+      "min_samples_split": 48
+    }
+  },
+  {
+    "name": "dt_100_ds_1461",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+      "ccp_alpha": 0.00004163823792026431,
+      "max_depth": 27,
+      "min_samples_leaf": 42,
+      "min_samples_split": 45
+    }
+  },
+  {
+    "name": "dt_100_ds_24",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+      "ccp_alpha": 0.00016173023892057054,
+      "max_depth": 25,
+      "min_samples_leaf": 4,
+      "min_samples_split": 10
+    }
+  },
+  {
+    "name": "dt_100_ds_40945",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+      "ccp_alpha": 0.0006836664642984019,
+      "max_depth": 27,
+      "min_samples_leaf": 40,
+      "min_samples_split": 10
+    }
+  },
+  {
+    "name": "dt_100_ds_31",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+      "ccp_alpha": 0.004333787203979937,
+      "max_depth": 16,
+      "min_samples_leaf": 23,
+      "min_samples_split": 28
+    }
+  },
+  {
+    "name": "dt_100_ds_44",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+      "ccp_alpha": 0.0003953686073053322,
+      "max_depth": 13,
+      "min_samples_leaf": 21,
+      "min_samples_split": 23
+    }
+  },
+  {
+    "name": "dt_100_ds_1464",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+      "ccp_alpha": 0.0020354917964727913,
+      "max_depth": 12,
+      "min_samples_leaf": 42,
+      "min_samples_split": 25
+    }
+  },
+  {
+    "name": "dt_100_ds_37",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+      "ccp_alpha": 0.0024825233478455435,
+      "max_depth": 26,
+      "min_samples_leaf": 12,
+      "min_samples_split": 46
+    }
+  },
+  {
+    "name": "dt_100_ds_3",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+      "ccp_alpha": 0.00018222538480928198,
+      "max_depth": 18,
+      "min_samples_leaf": 12,
+      "min_samples_split": 12
+    }
+  },
+  {
+    "name": "dt_100_ds_59",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+      "ccp_alpha": 0.0013401955818378422,
+      "max_depth": 24,
+      "min_samples_leaf": 17,
+      "min_samples_split": 12
+    }
+  }
+]
