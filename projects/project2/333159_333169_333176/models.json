@@ -1,0 +1,611 @@
+[
+  {
+    "name": "LogisticRegression_42",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "lbfgs",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 0.18545098731649648
+    }
+  },
+  {
+    "name": "LogisticRegression_2",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "liblinear",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 0.3243601689935789
+    }
+  },
+  {
+    "name": "LogisticRegression_45",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "lbfgs",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 0.022322871646692614
+    }
+  },
+  {
+    "name": "LogisticRegression_31",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "lbfgs",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 0.020259318468984926
+    }
+  },
+  {
+    "name": "LogisticRegression_19",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "lbfgs",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 0.5417114681784269
+    }
+  },
+  {
+    "name": "LogisticRegression_38",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "saga",
+      "penalty": "elasticnet",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 0.5871778293645635,
+      "l1_ratio": 0.5652361064811888
+    }
+  },
+  {
+    "name": "LogisticRegression_36",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "saga",
+      "penalty": "elasticnet",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 176.1295591948168,
+      "l1_ratio": 0.45891577553833995
+    }
+  },
+  {
+    "name": "LogisticRegression_46",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "saga",
+      "penalty": "elasticnet",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 2.8592835041442672,
+      "l1_ratio": 0.7838982091064135
+    }
+  },
+  {
+    "name": "XGBClassifier_27",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 182,
+      "learning_rate": 0.19287629564761058,
+      "max_depth": 7,
+      "subsample": 0.9480496546508848,
+      "colsample_bytree": 0.9480496546508848,
+      "gamma": 0.43506206831360594,
+      "random_state": 42,
+      "use_label_encoder": false,
+      "eval_metric": "logloss"
+    }
+  },
+  {
+    "name": "LGBMClassifier_39",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "n_estimators": 193,
+      "learning_rate": 0.2483910864654794,
+      "num_leaves": 35,
+      "max_depth": 20,
+      "min_child_samples": 35,
+      "subsample": 0.9777986411429227,
+      "colsample_bytree": 0.9777986411429227,
+      "random_state": 42,
+      "eval_metric": "binary_logloss"
+    }
+  },
+  {
+    "name": "LogisticRegression_12",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "saga",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 0.0065752122155164775
+    }
+  },
+  {
+    "name": "LogisticRegression_30",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "saga",
+      "penalty": null,
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "LogisticRegression_9",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "saga",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 2594.8957263705556
+    }
+  },
+  {
+    "name": "LogisticRegression_40",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "saga",
+      "penalty": "elasticnet",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 2.976166925177111,
+      "l1_ratio": 0.3039500980626122
+    }
+  },
+  {
+    "name": "LogisticRegression_26",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "saga",
+      "penalty": "l1",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 0.6392038907501587
+    }
+  },
+  {
+    "name": "LGBMClassifier_8",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "n_estimators": 188,
+      "learning_rate": 0.20838320204682162,
+      "num_leaves": 30,
+      "max_depth": 15,
+      "min_child_samples": 30,
+      "subsample": 0.9571440605744006,
+      "colsample_bytree": 0.9571440605744006,
+      "random_state": 42,
+      "eval_metric": "binary_logloss"
+    }
+  },
+  {
+    "name": "LogisticRegression_39",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "liblinear",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 11.960423565757496
+    }
+  },
+  {
+    "name": "LogisticRegression_8",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "saga",
+      "penalty": "l1",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 0.400947493786748
+    }
+  },
+  {
+    "name": "LGBMClassifier_27",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "n_estimators": 182,
+      "learning_rate": 0.19287629564761058,
+      "num_leaves": 24,
+      "max_depth": 9,
+      "min_child_samples": 24,
+      "subsample": 0.9480496546508848,
+      "colsample_bytree": 0.9480496546508848,
+      "random_state": 42,
+      "eval_metric": "binary_logloss"
+    }
+  },
+  {
+    "name": "LogisticRegression_48",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "saga",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 325.20939040020346
+    }
+  },
+  {
+    "name": "XGBClassifier_1",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "random_state": 42,
+      "use_label_encoder": false,
+      "eval_metric": "logloss"
+    }
+  },
+  {
+    "name": "XGBClassifier_6",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 172,
+      "learning_rate": 0.2681762596083411,
+      "max_depth": 5,
+      "subsample": 0.9868119356054706,
+      "colsample_bytree": 0.9868119356054706,
+      "gamma": 0.48351491950683834,
+      "random_state": 42,
+      "use_label_encoder": false,
+      "eval_metric": "logloss"
+    }
+  },
+  {
+    "name": "DecisionTreeClassifier_50",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+      "max_depth": null,
+      "min_samples_split": 2,
+      "min_samples_leaf": 1,
+      "criterion": "entropy",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "LogisticRegression_41",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "saga",
+      "penalty": "l1",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 0.31170165906332103
+    }
+  },
+  {
+    "name": "LogisticRegression_24",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "saga",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 0.09197666286618024
+    }
+  },
+  {
+    "name": "LGBMClassifier_38",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "n_estimators": 183,
+      "learning_rate": 0.1191498381975944,
+      "num_leaves": 25,
+      "max_depth": 10,
+      "min_child_samples": 25,
+      "subsample": 0.8914028766382902,
+      "colsample_bytree": 0.8914028766382902,
+      "random_state": 42,
+      "eval_metric": "binary_logloss"
+    }
+  },
+  {
+    "name": "XGBClassifier_31",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 165,
+      "learning_rate": 0.18874620732777136,
+      "max_depth": 8,
+      "subsample": 0.9455039942280332,
+      "colsample_bytree": 0.9455039942280332,
+      "gamma": 0.43187999278504147,
+      "random_state": 42,
+      "use_label_encoder": false,
+      "eval_metric": "logloss"
+    }
+  },
+  {
+    "name": "XGBClassifier_47",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 181,
+      "learning_rate": 0.2889947330081267,
+      "max_depth": 6,
+      "subsample": 0.9956046053902401,
+      "colsample_bytree": 0.9956046053902401,
+      "gamma": 0.49450575673780006,
+      "random_state": 42,
+      "use_label_encoder": false,
+      "eval_metric": "logloss"
+    }
+  },
+  {
+    "name": "XGBClassifier_38",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 183,
+      "learning_rate": 0.1191498381975944,
+      "max_depth": 8,
+      "subsample": 0.8914028766382902,
+      "colsample_bytree": 0.8914028766382902,
+      "gamma": 0.3642535957978628,
+      "random_state": 42,
+      "use_label_encoder": false,
+      "eval_metric": "logloss"
+    }
+  },
+  {
+    "name": "LogisticRegression_15",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "liblinear",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 116.0651723614604
+    }
+  },
+  {
+    "name": "XGBClassifier_39",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 193,
+      "learning_rate": 0.2483910864654794,
+      "max_depth": 10,
+      "subsample": 0.9777986411429227,
+      "colsample_bytree": 0.9777986411429227,
+      "gamma": 0.4722483014286534,
+      "random_state": 42,
+      "use_label_encoder": false,
+      "eval_metric": "logloss"
+    }
+  },
+  {
+    "name": "XGBClassifier_46",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 70,
+      "learning_rate": 0.17106575643421582,
+      "max_depth": 7,
+      "subsample": 0.9339368594662598,
+      "colsample_bytree": 0.9339368594662598,
+      "gamma": 0.4174210743328247,
+      "random_state": 42,
+      "use_label_encoder": false,
+      "eval_metric": "logloss"
+    }
+  },
+  {
+    "name": "XGBClassifier_10",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 134,
+      "learning_rate": 0.19505681806921685,
+      "max_depth": 6,
+      "subsample": 0.9493717611167265,
+      "colsample_bytree": 0.9493717611167265,
+      "gamma": 0.4367147013959081,
+      "random_state": 42,
+      "use_label_encoder": false,
+      "eval_metric": "logloss"
+    }
+  },
+  {
+    "name": "LogisticRegression_27",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "liblinear",
+      "penalty": "l1",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 22.83031782686214
+    }
+  },
+  {
+    "name": "XGBClassifier_26",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 181,
+      "learning_rate": 0.2618556588294968,
+      "max_depth": 5,
+      "subsample": 0.9840069213343674,
+      "colsample_bytree": 0.9840069213343674,
+      "gamma": 0.48000865166795925,
+      "random_state": 42,
+      "use_label_encoder": false,
+      "eval_metric": "logloss"
+    }
+  },
+  {
+    "name": "LogisticRegression_50",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "liblinear",
+      "penalty": "l1",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 60.10004605035796
+    }
+  },
+  {
+    "name": "LogisticRegression_28",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "lbfgs",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 458.5910434605207
+    }
+  },
+  {
+    "name": "LGBMClassifier_19",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "n_estimators": 161,
+      "learning_rate": 0.027243063237209188,
+      "num_leaves": 35,
+      "max_depth": 20,
+      "min_child_samples": 35,
+      "subsample": 0.7178660010748439,
+      "colsample_bytree": 0.7178660010748439,
+      "random_state": 42,
+      "eval_metric": "binary_logloss"
+    }
+  },
+  {
+    "name": "XGBClassifier_34",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 93,
+      "learning_rate": 0.18564514335292093,
+      "max_depth": 10,
+      "subsample": 0.9435557069172159,
+      "colsample_bytree": 0.9435557069172159,
+      "gamma": 0.42944463364651986,
+      "random_state": 42,
+      "use_label_encoder": false,
+      "eval_metric": "logloss"
+    }
+  },
+  {
+    "name": "LogisticRegression_32",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "liblinear",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 0.0013122599332415408
+    }
+  },
+  {
+    "name": "LGBMClassifier_1",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "random_state": 42,
+      "eval_metric": "binary_logloss"
+    }
+  },
+  {
+    "name": "DecisionTreeClassifier_1",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+      "random_state": 42
+    }
+  },
+  {
+    "name": "LogisticRegression_43",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "lbfgs",
+      "penalty": null,
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "LGBMClassifier_41",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "n_estimators": 187,
+      "learning_rate": 0.06424237623635748,
+      "num_leaves": 29,
+      "max_depth": 14,
+      "min_child_samples": 29,
+      "subsample": 0.8187556624581419,
+      "colsample_bytree": 0.8187556624581419,
+      "random_state": 42,
+      "eval_metric": "binary_logloss"
+    }
+  },
+  {
+    "name": "XGBClassifier_48",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 119,
+      "learning_rate": 0.14381872209915225,
+      "max_depth": 8,
+      "subsample": 0.9135329403223003,
+      "colsample_bytree": 0.9135329403223003,
+      "gamma": 0.3919161754028753,
+      "random_state": 42,
+      "use_label_encoder": false,
+      "eval_metric": "logloss"
+    }
+  },
+  {
+    "name": "LogisticRegression_16",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "solver": "lbfgs",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "random_state": 42,
+      "C": 5828.8676607144325
+    }
+  },
+  {
+    "name": "DecisionTreeClassifier_45",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+      "max_depth": null,
+      "min_samples_split": 6,
+      "min_samples_leaf": 5,
+      "criterion": "entropy",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "RandomForestClassifier_1",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "random_state": 42
+    }
+  },
+  {
+    "name": "RandomForestClassifier_50",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 50,
+      "max_depth": null,
+      "min_samples_split": 2,
+      "min_samples_leaf": 1,
+      "criterion": "entropy",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "RandomForestClassifier_36",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 172,
+      "max_depth": null,
+      "min_samples_split": 3,
+      "min_samples_leaf": 2,
+      "criterion": "gini",
+      "random_state": 42
+    }
+  }
+]
