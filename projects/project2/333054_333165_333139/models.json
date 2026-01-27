@@ -1,0 +1,252 @@
+[
+    {
+      "name": "logreg_l2_standard",
+      "class": "sklearn.linear_model.LogisticRegression",
+      "params": { "C": 1.0, "penalty": "l2", "solver": "lbfgs", "max_iter": 1000, "class_weight": "balanced" }
+    },
+    {
+      "name": "logreg_l2_strong",
+      "class": "sklearn.linear_model.LogisticRegression",
+      "params": { "C": 0.1, "penalty": "l2", "solver": "lbfgs", "max_iter": 1000, "class_weight": "balanced" }
+    },
+    {
+      "name": "logreg_l1_selection",
+      "class": "sklearn.linear_model.LogisticRegression",
+      "params": { "C": 1.0, "penalty": "l1", "solver": "liblinear", "max_iter": 1000, "class_weight": "balanced" }
+    },
+    {
+      "name": "rf_50_shallow",
+      "class": "sklearn.ensemble.RandomForestClassifier",
+      "params": { "n_estimators": 50, "max_depth": 10, "criterion": "gini", "n_jobs": -1, "class_weight": "balanced" }
+    },
+    {
+      "name": "rf_100_standard",
+      "class": "sklearn.ensemble.RandomForestClassifier",
+      "params": { "n_estimators": 100, "max_depth": null, "criterion": "gini", "n_jobs": -1, "class_weight": "balanced" }
+    },
+    {
+      "name": "rf_100_depth10",
+      "class": "sklearn.ensemble.RandomForestClassifier",
+      "params": { "n_estimators": 100, "max_depth": 10, "criterion": "gini", "n_jobs": -1, "class_weight": "balanced" }
+    },
+    {
+      "name": "rf_200_depth15",
+      "class": "sklearn.ensemble.RandomForestClassifier",
+      "params": { "n_estimators": 200, "max_depth": 15, "min_samples_split": 5, "criterion": "gini", "n_jobs": -1, "class_weight": "balanced" }
+    },
+    {
+      "name": "rf_200_entropy",
+      "class": "sklearn.ensemble.RandomForestClassifier",
+      "params": { "n_estimators": 200, "max_depth": null, "criterion": "entropy", "n_jobs": -1, "class_weight": "balanced" }
+    },
+    {
+      "name": "lgbm_50_fast",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 50, "learning_rate": 0.1, "num_leaves": 31, "boosting_type": "gbdt", "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "lgbm_100_standard",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 100, "learning_rate": 0.1, "num_leaves": 31, "boosting_type": "gbdt", "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "lgbm_100_deep",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 100, "learning_rate": 0.05, "num_leaves": 63, "boosting_type": "gbdt", "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "lgbm_200_mid",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 200, "learning_rate": 0.05, "num_leaves": 31, "boosting_type": "gbdt", "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "lgbm_200_slow_small",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 200, "learning_rate": 0.01, "num_leaves": 15, "boosting_type": "gbdt", "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "lgbm_300_slow_large",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 300, "learning_rate": 0.01, "num_leaves": 63, "boosting_type": "gbdt", "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "lgbm_100_dart",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 100, "learning_rate": 0.1, "num_leaves": 31, "boosting_type": "dart", "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "lgbm_500_slow",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 500, "learning_rate": 0.01, "num_leaves": 31, "boosting_type": "gbdt", "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "lgbm_150_leaves127",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 150, "learning_rate": 0.05, "num_leaves": 127, "boosting_type": "gbdt", "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "lgbm_100_goss",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 100, "learning_rate": 0.1, "num_leaves": 31, "boosting_type": "goss", "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "lgbm_200_reg_l1",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 200, "learning_rate": 0.05, "num_leaves": 31, "boosting_type": "gbdt", "reg_alpha": 0.1, "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "lgbm_200_reg_l2",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 200, "learning_rate": 0.05, "num_leaves": 31, "boosting_type": "gbdt", "reg_lambda": 0.1, "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "xgb_50_fast",
+      "class": "xgboost.XGBClassifier",
+      "params": { "n_estimators": 50, "max_depth": 6, "learning_rate": 0.1, "booster": "gbtree", "n_jobs": -1, "use_label_encoder": false, "eval_metric": "logloss" }
+    },
+    {
+      "name": "xgb_100_standard",
+      "class": "xgboost.XGBClassifier",
+      "params": { "n_estimators": 100, "max_depth": 6, "learning_rate": 0.1, "booster": "gbtree", "n_jobs": -1, "use_label_encoder": false, "eval_metric": "logloss" }
+    },
+    {
+      "name": "xgb_100_shallow",
+      "class": "xgboost.XGBClassifier",
+      "params": { "n_estimators": 100, "max_depth": 4, "learning_rate": 0.05, "booster": "gbtree", "n_jobs": -1, "use_label_encoder": false, "eval_metric": "logloss" }
+    },
+    {
+      "name": "xgb_200_deep_slow",
+      "class": "xgboost.XGBClassifier",
+      "params": { "n_estimators": 200, "max_depth": 8, "learning_rate": 0.01, "booster": "gbtree", "n_jobs": -1, "use_label_encoder": false, "eval_metric": "logloss" }
+    },
+    {
+      "name": "xgb_150_mid",
+      "class": "xgboost.XGBClassifier",
+      "params": { "n_estimators": 150, "max_depth": 5, "learning_rate": 0.05, "booster": "gbtree", "n_jobs": -1, "use_label_encoder": false, "eval_metric": "logloss" }
+    },
+    {
+      "name": "cat_100_fast",
+      "class": "catboost.CatBoostClassifier",
+      "params": { "iterations": 100, "depth": 6, "learning_rate": 0.1, "bootstrap_type": "MVS", "thread_count": -1, "verbose": 0, "allow_writing_files": false }
+    },
+    {
+      "name": "cat_200_standard",
+      "class": "catboost.CatBoostClassifier",
+      "params": { "iterations": 200, "depth": 6, "learning_rate": 0.05, "bootstrap_type": "MVS", "thread_count": -1, "verbose": 0, "allow_writing_files": false }
+    },
+    {
+      "name": "cat_200_shallow",
+      "class": "catboost.CatBoostClassifier",
+      "params": { "iterations": 200, "depth": 4, "learning_rate": 0.1, "bootstrap_type": "MVS", "thread_count": -1, "verbose": 0, "allow_writing_files": false }
+    },
+    {
+      "name": "cat_300_slow",
+      "class": "catboost.CatBoostClassifier",
+      "params": { "iterations": 300, "depth": 8, "learning_rate": 0.01, "l2_leaf_reg": 3, "bootstrap_type": "MVS", "thread_count": -1, "verbose": 0, "allow_writing_files": false }
+    },
+    {
+      "name": "cat_150_deep",
+      "class": "catboost.CatBoostClassifier",
+      "params": { "iterations": 150, "depth": 10, "learning_rate": 0.05, "bootstrap_type": "MVS", "thread_count": -1, "verbose": 0, "allow_writing_files": false }
+    },
+    {
+      "name": "rf_150_gini",
+      "class": "sklearn.ensemble.RandomForestClassifier",
+      "params": { "n_estimators": 150, "max_depth": 12, "criterion": "gini", "n_jobs": -1, "class_weight": "balanced" }
+    },
+    {
+      "name": "lgbm_300_dart_slow",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 300, "learning_rate": 0.01, "num_leaves": 31, "boosting_type": "dart", "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "cat_500_very_slow",
+      "class": "catboost.CatBoostClassifier",
+      "params": { "iterations": 500, "depth": 6, "learning_rate": 0.01, "bootstrap_type": "MVS", "thread_count": -1, "verbose": 0, "allow_writing_files": false }
+    },
+    {
+      "name": "xgb_300_shallow_slow",
+      "class": "xgboost.XGBClassifier",
+      "params": { "n_estimators": 300, "max_depth": 3, "learning_rate": 0.01, "booster": "gbtree", "n_jobs": -1, "use_label_encoder": false, "eval_metric": "logloss" }
+    },
+    {
+      "name": "rf_300_depth20",
+      "class": "sklearn.ensemble.RandomForestClassifier",
+      "params": { "n_estimators": 300, "max_depth": 20, "criterion": "gini", "n_jobs": -1, "class_weight": "balanced" }
+    },
+    {
+      "name": "lgbm_100_leaves15",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 100, "learning_rate": 0.1, "num_leaves": 15, "boosting_type": "gbdt", "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "lgbm_200_extra_trees",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 200, "learning_rate": 0.05, "num_leaves": 31, "boosting_type": "gbdt", "extra_trees": true, "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "cat_200_bagging",
+      "class": "catboost.CatBoostClassifier",
+      "params": { "iterations": 200, "depth": 6, "learning_rate": 0.05, "subsample": 0.8, "bootstrap_type": "Bernoulli", "thread_count": -1, "verbose": 0, "allow_writing_files": false }
+    },
+    {
+      "name": "rf_50_deep",
+      "class": "sklearn.ensemble.RandomForestClassifier",
+      "params": { "n_estimators": 50, "max_depth": 25, "criterion": "gini", "n_jobs": -1, "class_weight": "balanced" }
+    },
+    {
+      "name": "xgb_200_subsample",
+      "class": "xgboost.XGBClassifier",
+      "params": { "n_estimators": 200, "max_depth": 6, "learning_rate": 0.05, "subsample": 0.8, "booster": "gbtree", "n_jobs": -1, "use_label_encoder": false, "eval_metric": "logloss" }
+    },
+    {
+      "name": "lgbm_100_feature_fraction",
+      "class": "lightgbm.LGBMClassifier",
+      "params": { "n_estimators": 100, "learning_rate": 0.1, "feature_fraction": 0.8, "num_leaves": 31, "boosting_type": "gbdt", "n_jobs": -1, "class_weight": "balanced", "verbose": -1 }
+    },
+    {
+      "name": "cat_100_l2_strong",
+      "class": "catboost.CatBoostClassifier",
+      "params": { "iterations": 100, "depth": 6, "learning_rate": 0.1, "l2_leaf_reg": 9, "bootstrap_type": "MVS", "thread_count": -1, "verbose": 0, "allow_writing_files": false }
+    },
+    {
+      "name": "svc_rbf_standard",
+      "class": "sklearn.svm.SVC",
+      "params": { "C": 1.0, "kernel": "rbf", "gamma": "scale", "probability": true, "class_weight": "balanced" }
+    },
+    {
+      "name": "svc_rbf_loose",
+      "class": "sklearn.svm.SVC",
+      "params": { "C": 10.0, "kernel": "rbf", "gamma": "scale", "probability": true, "class_weight": "balanced" }
+    },
+    {
+      "name": "svc_rbf_tight",
+      "class": "sklearn.svm.SVC",
+      "params": { "C": 0.1, "kernel": "rbf", "gamma": "scale", "probability": true, "class_weight": "balanced" }
+    },
+    {
+      "name": "svc_linear",
+      "class": "sklearn.svm.SVC",
+      "params": { "C": 1.0, "kernel": "linear", "probability": true, "class_weight": "balanced" }
+    },
+    {
+      "name": "knn_5_standard",
+      "class": "sklearn.neighbors.KNeighborsClassifier",
+      "params": { "n_neighbors": 5, "weights": "uniform", "n_jobs": -1 }
+    },
+    {
+      "name": "knn_20_distance",
+      "class": "sklearn.neighbors.KNeighborsClassifier",
+      "params": { "n_neighbors": 20, "weights": "distance", "n_jobs": -1 }
+    },
+    {
+      "name": "extra_trees_100",
+      "class": "sklearn.ensemble.ExtraTreesClassifier",
+      "params": { "n_estimators": 100, "max_depth": null, "criterion": "gini", "n_jobs": -1, "class_weight": "balanced" }
+    },
+    {
+      "name": "extra_trees_200_entropy",
+      "class": "sklearn.ensemble.ExtraTreesClassifier",
+      "params": { "n_estimators": 200, "max_depth": null, "criterion": "entropy", "n_jobs": -1, "class_weight": "balanced" }
+    }
+  ]
