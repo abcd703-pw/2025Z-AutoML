@@ -1,0 +1,143 @@
+[{"name": "catboost10", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.5578001603979214, "reg_lambda": 20.026204184405028, "max_depth": 3, "n_estimators": 10, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost10", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.2981185806635943, "reg_lambda": 19.249017459376937, "max_depth": 11, "n_estimators": 10, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost10", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.4440381397237217, "reg_lambda": 22.826808334968778, "max_depth": 1, "n_estimators": 10, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost10", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.34606888136781, "reg_lambda": 13.552368748656521, "max_depth": 9, "n_estimators": 10, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost10", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.6673457003472645, "reg_lambda": 4.320520932104648, "max_depth": 8, "n_estimators": 10, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost10", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.5638867212116406, "reg_lambda": 0.11398468942911832, "max_depth": 16, "n_estimators": 10, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost10", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.7806520591147773, "reg_lambda": 1.8168723812412413, "max_depth": 5, "n_estimators": 10, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost10", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.6256779085739933, "reg_lambda": 30.08046967483251, "max_depth": 3, "n_estimators": 10, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost10", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.416668020558818, "reg_lambda": 23.34964676146008, "max_depth": 12, "n_estimators": 10, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost10", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.3605139074177802, "reg_lambda": 1.5847109066887066, "max_depth": 14, "n_estimators": 10, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost10", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.27975940555855533, "reg_lambda": 6.351242998051508, "max_depth": 2, "n_estimators": 10, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost10", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.8836570235436898, "reg_lambda": 2.6779408712399757, "max_depth": 13, "n_estimators": 10, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost10", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.4523278681545744, "reg_lambda": 18.260802623801176, "max_depth": 10, "n_estimators": 10, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost20", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.678668070564603, "reg_lambda": 15.935288479593892, "max_depth": 10, "n_estimators": 20, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost20", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.34573006339254225, "reg_lambda": 35.40741243946347, "max_depth": 1, "n_estimators": 20, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost20", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.24405672440431248, "reg_lambda": 13.670073104979199, "max_depth": 11, "n_estimators": 20, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost20", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.23748735979998492, "reg_lambda": 30.42454011325219, "max_depth": 15, "n_estimators": 20, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost20", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.3791124303667361, "reg_lambda": 22.879603500797625, "max_depth": 14, "n_estimators": 20, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost20", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.8971497573906562, "reg_lambda": 6.9535721414354885, "max_depth": 16, "n_estimators": 20, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost20", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.46141611209569333, "reg_lambda": 1.5379618401394346, "max_depth": 16, "n_estimators": 20, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost20", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.5133100299232498, "reg_lambda": 32.96206560887144, "max_depth": 1, "n_estimators": 20, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost20", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.10429444183194003, "reg_lambda": 6.178155439617773, "max_depth": 6, "n_estimators": 20, "subsample": 1, "thread_count": -1, "verbose": false}},
+{"name": "catboost20", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.8702408548468217, "reg_lambda": 30.819978883731935, "max_depth": 14, "n_estimators": 20, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost20", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.5599338333377685, "reg_lambda": 1.7686698473819944, "max_depth": 10, "n_estimators": 20, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost20", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.35780094067966434, "reg_lambda": 12.148039784705325, "max_depth": 13, "n_estimators": 20, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost200", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.8423447450318253, "reg_lambda": 18.584041565455962, "max_depth": 13, "n_estimators": 200, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost200", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.04147511175327268, "reg_lambda": 34.50878902527416, "max_depth": 11, "n_estimators": 200, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost200", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.06389716863907442, "reg_lambda": 14.307309151470397, "max_depth": 11, "n_estimators": 200, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost200", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.023249012531863757, "reg_lambda": 9.698080805978687, "max_depth": 3, "n_estimators": 200, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost200", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.4682961157748834, "reg_lambda": 32.867543017140285, "max_depth": 13, "n_estimators": 200, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost200", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.4580110566277615, "reg_lambda": 18.186717396646465, "max_depth": 12, "n_estimators": 200, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost200", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.38858778929360605, "reg_lambda": 10.052378853040462, "max_depth": 7, "n_estimators": 200, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost200", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.3105052303764868, "reg_lambda": 26.985490427006724, "max_depth": 12, "n_estimators": 200, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost200", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.995773821525002, "reg_lambda": 22.436602146430094, "max_depth": 9, "n_estimators": 200, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost200", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.028814501084043154, "reg_lambda": 8.14165869182919, "max_depth": 1, "n_estimators": 200, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost200", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.512267454704724, "reg_lambda": 17.94098946162915, "max_depth": 12, "n_estimators": 200, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboost200", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.7184345607944334, "reg_lambda": 29.894024243406896, "max_depth": 6, "n_estimators": 200, "subsample": 1, "thread_count": -1, "verbose": false}}, 
+{"name": "catboostMEGA", "class": "catboost.CatBoostClassifier", "params": {"learning_rate": 0.10861102706094203, "subsample": 0.9823120668683417, "reg_lambda": 35.38420370232757, "max_depth": 10, "n_estimators": 1000, "thread_count": -1, "verbose": false}},
+{
+    "name": "regr_s",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 30.665,
+      "l1_ratio": 0.1,
+      "solver": "saga",
+      "max_iter": 50000
+    }
+  },
+  {
+    "name": "regr_m",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 91.295,
+      "l1_ratio": 0.01,
+      "solver": "saga",
+      "max_iter": 50000
+    }
+  },
+  {
+    "name": "regr_l",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 12.559999999999999,
+      "l1_ratio": 0.1,
+      "solver": "saga",
+      "max_iter": 50000
+    }
+  },
+  {
+    "name": "regr_f",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "C": 5.3149999999999995,
+      "l1_ratio": 0.22,
+      "solver": "saga",
+      "max_iter": 50000
+    }
+  },
+  {
+    "name": "knn_s",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 16,
+      "p": 2.0
+    }
+  },
+  {
+    "name": "knn_m",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 27,
+      "p": 2.0
+    }
+  },
+  {
+    "name": "knn_l",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 35,
+      "p": 2.0
+    }
+  },
+  {
+    "name": "knn_f",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 42,
+      "p": 4.0
+    }
+  },
+  {
+    "name": "svm_s",
+    "class": "sklearn.svm.SVC",
+    "params": {
+      "C": 32.48,
+      "probability": true
+    }
+  },
+  {
+    "name": "svm_m",
+    "class": "sklearn.svm.SVC",
+    "params": {
+      "C": 5.23,
+      "probability": true
+    }
+  },
+  {
+    "name": "svm_l",
+    "class": "sklearn.svm.SVC",
+    "params": {
+      "C": 17.23,
+      "probability": true
+    }
+  },
+  {
+    "name": "svm_f",
+    "class": "sklearn.svm.SVC",
+    "params": {
+      "C": 32.48,
+      "probability": true
+    }
+  }
+]
