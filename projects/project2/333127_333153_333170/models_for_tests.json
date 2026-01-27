@@ -1,0 +1,524 @@
+[
+{
+    "name": "log_reg1",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+        "solver": "saga",
+        "class_weight": "balanced",
+        "max_iter": 2000,
+        "random_state": 42,
+        "n_jobs": -1
+    }
+},
+{
+    "name": "log_reg2",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+        "solver": "lbfgs",
+        "max_iter": 2000,
+        "random_state": 42,
+        "n_jobs": -1
+    }
+},
+{
+    "name": "log_reg3",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+        "solver": "saga",
+        "penalty": "l1",
+        "C": 0.5,
+        "class_weight": "balanced",
+        "max_iter": 2000,
+        "random_state": 42,
+        "n_jobs": -1
+    }
+},
+{
+    "name": "log_reg4",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+        "solver": "saga",
+        "penalty": "elasticnet",
+        "l1_ratio": 0.5,
+        "C": 0.1,
+        "class_weight": "balanced",
+        "max_iter": 3000,
+        "random_state": 42,
+        "n_jobs": -1
+    }
+},
+{
+    "name": "log_reg5",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+        "solver": "liblinear",
+        "C": 0.01,
+        "class_weight": "balanced",
+        "max_iter": 1000,
+        "random_state": 42,
+        "n_jobs": -1
+    }
+},
+{
+    "name": "lda1",
+    "class": "sklearn.discriminant_analysis.LinearDiscriminantAnalysis",
+    "params": {
+        "solver": "lsqr",
+        "shrinkage": "auto"
+    }
+},
+{
+    "name": "lda2",
+    "class": "sklearn.discriminant_analysis.LinearDiscriminantAnalysis",
+    "params": {
+        "solver": "svd"
+    }
+},
+{
+    "name": "ridge_clf",
+    "class": "sklearn.linear_model.RidgeClassifier",
+    "params": {
+        "alpha": 1.0,
+        "solver": "auto",
+        "class_weight": "balanced",
+        "random_state": 42
+    }
+},
+{
+    "name": "decision_tree1",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+        "criterion": "entropy",
+        "max_depth": 7,
+        "class_weight": "balanced",
+        "random_state": 42
+    }
+},
+{
+    "name": "decision_tree2",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+        "max_depth": 1,
+        "random_state": 42
+    }
+},
+{
+    "name": "decision_tree3",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+        "max_depth": 10,
+        "min_samples_leaf": 5,
+        "class_weight": "balanced",
+        "random_state": 42
+    }
+},
+{
+    "name": "decision_tree4",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+        "max_depth": 20,
+        "min_samples_split": 10,
+        "class_weight": "balanced",
+        "random_state": 42
+    }
+},
+{
+    "name": "decision_tree5",
+    "class": "sklearn.tree.DecisionTreeClassifier",
+    "params": {
+        "max_depth": null,
+        "class_weight": null,
+        "random_state": 42
+    }
+},
+{
+    "name": "random_forest1",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params":{
+        "max_depth": 10,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": 1
+    }
+},
+{
+    "name": "random_forest2",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params":{
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "n_jobs": 1,
+        "random_state": 42
+    }
+},
+{
+    "name": "random_forest3",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params":{
+        "n_estimators": 500,
+        "max_depth": 15,
+        "class_weight": "balanced",
+        "min_samples_leaf": 5,
+        "n_jobs": 1,
+        "random_state": 42
+    }
+},
+{
+    "name": "random_forest4",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params":{
+        "n_estimators": 200,
+        "criterion": "entropy",
+        "max_depth": 25,
+        "min_samples_split": 5,
+        "n_jobs": 1,
+        "random_state": 42
+    }
+},
+{
+    "name": "extra_trees1",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params":{
+        "n_estimators": 200,
+       "max_depth": 12,
+       "min_samples_leaf": 2,
+       "bootstrap": true,
+       "class_weight": "balanced",
+       "n_jobs": 1,
+       "random_state": 42
+
+    }
+},
+{
+    "name": "extra_trees2",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params":{
+        "n_estimators": 400,
+       "max_depth": null,
+       "criterion": "entropy",
+       "n_jobs": 1,
+       "random_state": 42
+
+    }
+},
+{
+    "name": "xgboost1",
+    "class": "xgboost.XGBClassifier",
+    "params":{
+        "n_estimators": 100,
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "subsample": 0.8,
+        "n_jobs": -1,
+        "random_state": 42,
+        "eval_metric": "logloss"
+
+    }
+},
+{
+    "name": "xgboost2",
+    "class": "xgboost.XGBClassifier",
+    "params":{
+        "n_estimators": 400,
+        "max_depth": 7,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.8,
+        "subsample": 0.9,
+        "n_jobs": -1,
+        "random_state": 42,
+        "eval_metric": "logloss"
+
+    }
+},
+{
+    "name": "xgboost3",
+    "class": "xgboost.XGBClassifier",
+    "params":{
+        "n_estimators": 150,
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "n_jobs": -1,
+        "random_state": 42,
+        "eval_metric": "logloss"
+
+    }
+},
+{
+    "name": "xgboost4",
+    "class": "xgboost.XGBClassifier",
+    "params":{
+        "n_estimators": 1000,
+        "max_depth": 6,
+        "learning_rate": 0.01,
+        "colsample_bytree": 0.7,
+        "subsample": 0.7,
+        "n_jobs": -1,
+        "random_state": 42,
+        "eval_metric": "logloss"
+
+    }
+},
+{
+    "name": "xgboost5",
+    "class": "xgboost.XGBClassifier",
+    "params":{
+        "n_estimators": 200,
+        "max_depth": 10,
+        "learning_rate": 0.05,
+        "min_child_weight": 5,
+        "gamma": 0.2,
+        "n_jobs": -1,
+        "random_state": 42,
+        "eval_metric": "logloss"
+
+    }
+},
+{
+    "name": "xgboost6",
+    "class": "xgboost.XGBClassifier",
+    "params":{
+        "n_estimators": 300,
+        "max_depth": 5,
+        "learning_rate": 0.05,
+        "reg_alpha": 0.5,
+        "n_jobs": -1,
+        "random_state": 42,
+        "eval_metric": "logloss"
+
+    }
+},
+{
+    "name": "catboost1",
+    "class": "catboost.CatBoostClassifier",
+    "params":{
+        "iterations": 150,
+        "depth": 6,
+        "learning_rate": 0.15,
+        "random_seed": 42,
+        "verbose":0,
+        "allow_writing_files": false
+    }
+},
+{
+    "name": "catboost2",
+    "class": "catboost.CatBoostClassifier",
+    "params":{
+        "iterations": 500,
+        "depth": 8,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 3,
+        "random_seed": 42,
+        "verbose":0,
+        "allow_writing_files": false
+    }
+},
+{
+    "name": "catboost3",
+    "class": "catboost.CatBoostClassifier",
+    "params":{
+        "iterations": 300,
+        "depth": 5,
+        "learning_rate": 0.1,
+        "random_seed": 42,
+        "verbose":0,
+        "allow_writing_files": false
+    }
+},
+{
+    "name": "catboost4",
+    "class": "catboost.CatBoostClassifier",
+    "params":{
+        "iterations": 2000,
+        "depth": 8,
+        "learning_rate": 0.02,
+        "l2_leaf_reg": 5,
+        "bagging_temperature": 1,
+        "random_seed": 42,
+        "verbose":0,
+        "allow_writing_files": false
+    }
+},
+{
+    "name": "catboost5",
+    "class": "catboost.CatBoostClassifier",
+    "params":{
+        "iterations": 800,
+        "depth": 8,
+        "learning_rate": 0.04,
+        "l2_leaf_reg": 5,
+        "bagging_temperature": 1,
+        "random_seed": 42,
+        "verbose":0,
+        "allow_writing_files": false
+    }
+},
+{
+    "name": "catboost6",
+    "class": "catboost.CatBoostClassifier",
+    "params": {
+        "iterations": 600,
+        "depth": 4,
+        "learning_rate": 0.1,
+        "l2_leaf_reg": 3,
+        "random_seed": 42,
+        "verbose":0,
+        "allow_writing_files": false
+    }
+},
+{
+    "name": "catboost7",
+    "class": "catboost.CatBoostClassifier",
+    "params": {
+        "iterations": 1500,
+        "depth": 10,
+        "learning_rate": 0.01,
+        "l2_leaf_reg": 9,
+        "random_strength": 1,
+        "random_seed": 42,
+        "verbose":0,
+        "allow_writing_files": false
+    }
+},
+{
+    "name": "knn1",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+        "n_neighbors": 15,
+        "weights": "distance",
+        "n_jobs": -1
+    }
+},
+{
+    "name": "knn2",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+        "n_neighbors": 25,
+        "weights": "distance",
+        "n_jobs": -1
+    }
+},
+{
+    "name": "knn3",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+        "n_neighbors": 5,
+        "weights": "uniform",
+        "n_jobs": -1
+    }
+},
+{
+    "name": "knn4",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+        "n_neighbors": 50,
+        "weights": "distance",
+        "p": 1,
+        "n_jobs": -1
+    }
+},
+{
+    "name": "svm1",
+    "class": "sklearn.svm.SVC",
+    "params": {
+        "class_weight": "balanced",
+        "probability": true,
+        "random_state": 42,
+        "cache_size": 1000
+    }
+},
+{
+    "name": "svm2",
+    "class": "sklearn.svm.SVC",
+    "params": {
+        "C": 0.1,
+        "kernel": "linear",
+        "probability": true,
+        "class_weight": "balanced",
+        "random_state": 42
+   }
+},
+{
+    "name": "svm3",
+    "class": "sklearn.svm.SVC",
+    "params": {
+        "kernel": "poly",
+        "degree": 3,
+        "probability": true,
+        "class_weight": "balanced",
+        "random_state": 42
+   }
+},
+{
+    "name": "svm4",
+    "class": "sklearn.svm.SVC",
+    "params": {
+        "C": 10,
+        "probability": true,
+        "random_state": 42
+   }
+},
+{
+    "name": "gaussian_nb",
+    "class": "sklearn.naive_bayes.GaussianNB",
+    "params": {
+    }
+},
+{
+    "name": "bernoulli_nb1",
+    "class": "sklearn.naive_bayes.BernoulliNB",
+    "params": {
+        "alpha": 0.5
+    }
+},
+{
+    "name": "bernoulli_nb2",
+    "class": "sklearn.naive_bayes.BernoulliNB",
+    "params": {
+        "alpha": 1.0
+    }
+},
+{
+    "name": "ada_boost1",
+    "class": "sklearn.ensemble.AdaBoostClassifier",
+    "params": {
+        "n_estimators": 100,
+        "learning_rate": 1.0,
+        "random_state": 42
+    }
+},
+{
+    "name": "ada_boost2",
+    "class": "sklearn.ensemble.AdaBoostClassifier",
+    "params": {
+        "n_estimators": 200,
+        "learning_rate": 0.1,
+        "random_state": 42
+    }
+},
+{
+    "name":"gradient_boosting",
+    "class":"sklearn.ensemble.GradientBoostingClassifier",
+    "params":{
+        "n_estimators":200,
+        "learning_rate":0.1,
+        "max_depth":3,
+        "subsample":0.8,
+        "validation_fraction":0.1,
+        "n_iter_no_change":10,
+        "random_state":42
+    }
+},
+{
+    "name":"hist_gradient_boosting",
+    "class":"sklearn.ensemble.HistGradientBoostingClassifier",
+    "params":{
+        "max_iter":200,
+        "learning_rate":0.1,
+        "max_depth":10,
+        "l2_regularization":0.5,
+        "random_state":42
+    }
+}
+
+]
