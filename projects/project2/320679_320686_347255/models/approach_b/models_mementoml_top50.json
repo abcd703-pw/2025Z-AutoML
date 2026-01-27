@@ -1,0 +1,627 @@
+[
+  {
+    "name": "xgboost_top1_param1070",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 355,
+      "learning_rate": 0.0324106605480031,
+      "max_depth": 8,
+      "subsample": 0.867935555521399,
+      "colsample_bytree": 0.71023326292634,
+      "colsample_bylevel": 0.690302629210055,
+      "min_child_weight": 2.18921599683768,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top2_param1049",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 184,
+      "learning_rate": 0.0617450318338613,
+      "max_depth": 7,
+      "subsample": 0.683306726277806,
+      "colsample_bytree": 0.744482032582164,
+      "colsample_bylevel": 0.859297586232424,
+      "min_child_weight": 2.56567480883493,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top3_param1056",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 282,
+      "learning_rate": 0.0962582983602717,
+      "max_depth": 14,
+      "subsample": 0.966606075176969,
+      "colsample_bytree": 0.952940160222352,
+      "colsample_bylevel": 0.354075000621378,
+      "min_child_weight": 1.07724400296566,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top4_param1045",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 109,
+      "learning_rate": 0.0699401344515662,
+      "max_depth": 14,
+      "subsample": 0.867133233579807,
+      "colsample_bytree": 0.565902150422335,
+      "colsample_bylevel": 0.621011920087039,
+      "min_child_weight": 1.39082881585674,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top5_param1079",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 268,
+      "learning_rate": 0.057311228047118,
+      "max_depth": 14,
+      "subsample": 0.693450994323939,
+      "colsample_bytree": 0.373665936477482,
+      "colsample_bylevel": 0.297132815979421,
+      "min_child_weight": 1.32540148414612,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top6_param1160",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 756,
+      "learning_rate": 0.0403232295575335,
+      "max_depth": 10,
+      "subsample": 0.777657110360451,
+      "colsample_bytree": 0.413046978227794,
+      "colsample_bylevel": 0.892870987206698,
+      "min_child_weight": 1.92624185774548,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top7_param1109",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 757,
+      "learning_rate": 0.0816841850176899,
+      "max_depth": 6,
+      "subsample": 0.92063701513689,
+      "colsample_bytree": 0.771420868672431,
+      "colsample_bylevel": 0.232633330486715,
+      "min_child_weight": 1.01113620011384,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top8_param1113",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 807,
+      "learning_rate": 0.123695466754602,
+      "max_depth": 13,
+      "subsample": 0.978877916000783,
+      "colsample_bytree": 0.52648001704365,
+      "colsample_bylevel": 0.946952299401164,
+      "min_child_weight": 4.54843817298641,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top9_param1095",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 43,
+      "learning_rate": 0.316077227976953,
+      "max_depth": 7,
+      "subsample": 0.885745146777481,
+      "colsample_bytree": 0.774070444516838,
+      "colsample_bylevel": 0.542784976400435,
+      "min_child_weight": 1.48563325423801,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top10_param1073",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 671,
+      "learning_rate": 0.20477418757723,
+      "max_depth": 6,
+      "subsample": 0.924297111108899,
+      "colsample_bytree": 0.790864309296012,
+      "colsample_bylevel": 0.529139797389507,
+      "min_child_weight": 2.03902094977089,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top11_param1010",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 421,
+      "learning_rate": 0.0502218791736965,
+      "max_depth": 13,
+      "subsample": 0.947396234492771,
+      "colsample_bytree": 0.956590805947781,
+      "colsample_bylevel": 0.864967179112136,
+      "min_child_weight": 2.33641923250691,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top12_param1146",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 554,
+      "learning_rate": 0.17265919088254,
+      "max_depth": 15,
+      "subsample": 0.965862372424453,
+      "colsample_bytree": 0.23376930039376,
+      "colsample_bylevel": 0.655630644224584,
+      "min_child_weight": 2.06116429078194,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top13_param1087",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 567,
+      "learning_rate": 0.0412187278718665,
+      "max_depth": 11,
+      "subsample": 0.712577129947022,
+      "colsample_bytree": 0.720711501315236,
+      "colsample_bylevel": 0.970978255011141,
+      "min_child_weight": 2.46269419953078,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top14_param1145",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 166,
+      "learning_rate": 0.083460252483799,
+      "max_depth": 13,
+      "subsample": 0.642710249405354,
+      "colsample_bytree": 0.869799339585006,
+      "colsample_bylevel": 0.663077664002776,
+      "min_child_weight": 1.22776083425979,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "xgboost_top15_param1047",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 514,
+      "learning_rate": 0.0315223422360077,
+      "max_depth": 8,
+      "subsample": 0.599751731846482,
+      "colsample_bytree": 0.902166918665171,
+      "colsample_bylevel": 0.21982565689832,
+      "min_child_weight": 2.34864299159546,
+      "booster": "gbtree",
+      "random_state": 42,
+      "tree_method": "hist"
+    }
+  },
+  {
+    "name": "randomForest_top16_param1049",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 8822,
+      "bootstrap": false,
+      "random_state": 42,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "name": "randomForest_top17_param1016",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 7649,
+      "bootstrap": false,
+      "random_state": 42,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "name": "randomForest_top18_param1046",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 8294,
+      "bootstrap": false,
+      "random_state": 42,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "name": "randomForest_top19_param1019",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 897,
+      "bootstrap": false,
+      "random_state": 42,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "name": "randomForest_top20_param1029",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 788,
+      "bootstrap": false,
+      "random_state": 42,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "name": "randomForest_top21_param1013",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 7463,
+      "bootstrap": false,
+      "random_state": 42,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "name": "randomForest_top22_param1030",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 4736,
+      "bootstrap": true,
+      "random_state": 42,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "name": "randomForest_top23_param1001",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 6810,
+      "bootstrap": false,
+      "random_state": 42,
+      "min_samples_leaf": 2
+    }
+  },
+  {
+    "name": "randomForest_top24_param1034",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 2363,
+      "bootstrap": true,
+      "random_state": 42,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "name": "randomForest_top25_param1012",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 2763,
+      "bootstrap": false,
+      "random_state": 42,
+      "min_samples_leaf": 2
+    }
+  },
+  {
+    "name": "gbm_top26_param1399",
+    "class": "sklearn.ensemble.GradientBoostingClassifier",
+    "params": {
+      "n_estimators": 9751,
+      "learning_rate": 0.0036416000430948,
+      "max_depth": 5,
+      "min_samples_leaf": 3,
+      "subsample": 0.735055895708501,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "gbm_top27_param1101",
+    "class": "sklearn.ensemble.GradientBoostingClassifier",
+    "params": {
+      "n_estimators": 3192,
+      "learning_rate": 0.0115218395867009,
+      "max_depth": 5,
+      "min_samples_leaf": 16,
+      "subsample": 0.339419533126056,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "gbm_top28_param1683",
+    "class": "sklearn.ensemble.GradientBoostingClassifier",
+    "params": {
+      "n_estimators": 5385,
+      "learning_rate": 0.0018683940294369,
+      "max_depth": 5,
+      "min_samples_leaf": 4,
+      "subsample": 0.832181800343096,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "gbm_top29_param1272",
+    "class": "sklearn.ensemble.GradientBoostingClassifier",
+    "params": {
+      "n_estimators": 8039,
+      "learning_rate": 0.0055493718844742,
+      "max_depth": 5,
+      "min_samples_leaf": 3,
+      "subsample": 0.814661961793899,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "gbm_top30_param1280",
+    "class": "sklearn.ensemble.GradientBoostingClassifier",
+    "params": {
+      "n_estimators": 8379,
+      "learning_rate": 0.0041592344641079,
+      "max_depth": 5,
+      "min_samples_leaf": 5,
+      "subsample": 0.602520916424692,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "gbm_top31_param1590",
+    "class": "sklearn.ensemble.GradientBoostingClassifier",
+    "params": {
+      "n_estimators": 9423,
+      "learning_rate": 0.0024335637092442,
+      "max_depth": 5,
+      "min_samples_leaf": 4,
+      "subsample": 0.369743395783007,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "gbm_top32_param1432",
+    "class": "sklearn.ensemble.GradientBoostingClassifier",
+    "params": {
+      "n_estimators": 5854,
+      "learning_rate": 0.0070765609502859,
+      "max_depth": 5,
+      "min_samples_leaf": 6,
+      "subsample": 0.530640215799213,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "gbm_top33_param1456",
+    "class": "sklearn.ensemble.GradientBoostingClassifier",
+    "params": {
+      "n_estimators": 7875,
+      "learning_rate": 0.0032459353881806,
+      "max_depth": 5,
+      "min_samples_leaf": 10,
+      "subsample": 0.749076421372592,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "gbm_top34_param1155",
+    "class": "sklearn.ensemble.GradientBoostingClassifier",
+    "params": {
+      "n_estimators": 9417,
+      "learning_rate": 0.0018748085560589,
+      "max_depth": 5,
+      "min_samples_leaf": 3,
+      "subsample": 0.36805149000138,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "gbm_top35_param1627",
+    "class": "sklearn.ensemble.GradientBoostingClassifier",
+    "params": {
+      "n_estimators": 4774,
+      "learning_rate": 0.0103241557434611,
+      "max_depth": 5,
+      "min_samples_leaf": 9,
+      "subsample": 0.665613202936947,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "kknn_top36_param1952",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 30,
+      "weights": "distance",
+      "metric": "euclidean"
+    }
+  },
+  {
+    "name": "kknn_top37_param1994",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 28,
+      "weights": "distance",
+      "metric": "euclidean"
+    }
+  },
+  {
+    "name": "kknn_top38_param1999",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 29,
+      "weights": "distance",
+      "metric": "euclidean"
+    }
+  },
+  {
+    "name": "kknn_top39_param1938",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 27,
+      "weights": "distance",
+      "metric": "euclidean"
+    }
+  },
+  {
+    "name": "kknn_top40_param1947",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 26,
+      "weights": "distance",
+      "metric": "euclidean"
+    }
+  },
+  {
+    "name": "glmnet_top41_param1171",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "max_iter": 1000,
+      "random_state": 42,
+      "penalty": "elasticnet",
+      "solver": "saga",
+      "l1_ratio": 0.729730096645653,
+      "C": 376.40659441239603
+    }
+  },
+  {
+    "name": "glmnet_top42_param1707",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "max_iter": 1000,
+      "random_state": 42,
+      "penalty": "elasticnet",
+      "solver": "saga",
+      "l1_ratio": 0.19162413617596,
+      "C": 162.5340083017058
+    }
+  },
+  {
+    "name": "glmnet_top43_param1960",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "max_iter": 1000,
+      "random_state": 42,
+      "penalty": "elasticnet",
+      "solver": "saga",
+      "l1_ratio": 0.679453118005767,
+      "C": 320.31113238498125
+    }
+  },
+  {
+    "name": "glmnet_top44_param1040",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "max_iter": 1000,
+      "random_state": 42,
+      "penalty": "elasticnet",
+      "solver": "saga",
+      "l1_ratio": 0.611778643447906,
+      "C": 311.28137541058805
+    }
+  },
+  {
+    "name": "glmnet_top45_param1736",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "max_iter": 1000,
+      "random_state": 42,
+      "penalty": "elasticnet",
+      "solver": "saga",
+      "l1_ratio": 0.476859610993415,
+      "C": 303.82640736000127
+    }
+  },
+  {
+    "name": "glmnet_top46_param1500",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "max_iter": 1000,
+      "random_state": 42,
+      "penalty": "elasticnet",
+      "solver": "saga",
+      "l1_ratio": 0.0328091429546475,
+      "C": 138.72335705828417
+    }
+  },
+  {
+    "name": "glmnet_top47_param1982",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "max_iter": 1000,
+      "random_state": 42,
+      "penalty": "elasticnet",
+      "solver": "saga",
+      "l1_ratio": 0.0303770385216922,
+      "C": 134.08420790997033
+    }
+  },
+  {
+    "name": "glmnet_top48_param1415",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "max_iter": 1000,
+      "random_state": 42,
+      "penalty": "elasticnet",
+      "solver": "saga",
+      "l1_ratio": 0.145928690675646,
+      "C": 164.02404098210926
+    }
+  },
+  {
+    "name": "glmnet_top49_param1228",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "max_iter": 1000,
+      "random_state": 42,
+      "penalty": "elasticnet",
+      "solver": "saga",
+      "l1_ratio": 0.185453581158072,
+      "C": 150.9312029316475
+    }
+  },
+  {
+    "name": "glmnet_top50_param1578",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "max_iter": 1000,
+      "random_state": 42,
+      "penalty": "elasticnet",
+      "solver": "saga",
+      "l1_ratio": 0.0267354713287205,
+      "C": 133.22136864499882
+    }
+  }
+]
