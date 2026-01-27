@@ -1,0 +1,69 @@
+{
+  "portfolio_path": "../../models.json",
+  "time_budget": 300,
+  "cv_folds": 5,
+  "random_state": 42,
+  "greedy_top_k": 5,
+  "hb_min_resource": 1,
+  "hb_reduction_factor": 2,
+  "st1_penalty_k": 0.1,
+  "st3_diversity_weight": 0.3,
+
+  "family_definitions": {
+    "catboost": ["catboost"],
+    "xgboost": ["xgboost", "gradientboost"],
+    "lightgbm": ["lgbm", "lightgbm"],
+    "random_forest": ["rf", "randomforest", "extratrees"],
+    "linear": ["linear", "logistic", "regression"],
+    "knn": ["knn", "neighbor"]
+  },
+
+  "data_mapping": {
+    "catboost": "cat_not_enc",
+    "xgboost": "cat_enc",
+    "lightgbm": "cat_enc",
+    "random_forest": "cat_enc",
+    "linear": "cat_enc_scaled_without_na",
+    "knn": "cat_enc_scaled_without_na"
+  },
+
+  "stage1_rules": [
+    {
+      "name": "fast_boostings",
+      "limit": 8,
+      "families": ["lightgbm", "xgboost"],
+      "skip_hyperband": false
+    },
+    {
+      "name": "heavy_boostings",
+      "limit": 4,
+      "families": ["catboost"],
+      "skip_hyperband": false
+    },
+    {
+      "name": "simple_models",
+      "limit": 6,
+      "families": ["random_forest", "linear", "knn"],
+      "skip_hyperband": false
+    }
+  ],
+
+  "stage2_rules": [
+  {
+    "name": "fast_boostings",
+    "limit": 2,
+    "families": ["lightgbm", "xgboost"]
+  },
+  {
+    "name": "heavy_boostings",
+    "limit": 2,
+    "families": ["catboost"]
+  },
+  {
+    "name": "simple_models",
+    "limit": 3,
+    "families": ["random_forest", "linear", "knn"]
+  }]
+
+
+}

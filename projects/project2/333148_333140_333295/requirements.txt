@@ -1,0 +1,13 @@
+matplotlib==3.9.4
+numpy==2.0.2
+optuna==4.6.0
+pandas==2.3.3
+scikit-learn==1.6.1
+seaborn==0.13.2
+xgboost>=2.1.0
+boruta>=0.3
+pytest>=7.4,<9.0
+catboost==1.2.8
+ipykernel
+optuna_integration
+lightgbm
