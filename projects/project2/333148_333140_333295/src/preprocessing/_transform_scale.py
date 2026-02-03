@@ -51,9 +51,9 @@ class Scaler:
                 continue
 
             if df_test is not None:
-                df_dict[f"{key}_{scaled_abb}"] = [df_train.loc[:, num_cols], df_test.loc[:, num_cols]]
+                df_dict[f"{key}_{scaled_abb}"] = [df_train, df_test]
             else:
-                df_dict[f"{key}_{scaled_abb}"] = [df_train.loc[:, num_cols]]
+                df_dict[f"{key}_{scaled_abb}"] = [df_train]
         return df_dict
 
     def transform_scale(self, scaled_abb):

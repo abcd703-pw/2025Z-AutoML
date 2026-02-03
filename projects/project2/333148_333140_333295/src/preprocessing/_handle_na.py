@@ -1,6 +1,7 @@
 import warnings
 
 import numpy as np
+import pandas as pd
 from sklearn.impute import SimpleImputer
 
 class NAHandler:
@@ -70,9 +71,12 @@ class NAHandler:
         warning_issued = False
         for i, (X_train, X_test) in enumerate(X_pairs):
             missing_values = np.nan
+            to_replace = [np.inf, -np.inf, pd.NA, pd.NaT, None, 'null', 'Null', 'NULL', 'NAN', 'NaN', 'Nan', 'nan', 'NA', 'Na', 'na']
+            X_train = X_train.replace(to_replace, missing_values)
+            X_test = X_test.replace(to_replace, missing_values)
 
             # num_cols
-            if self.num_cols and X_train[self.num_cols].isnull().values.any():
+            if self.num_cols and X_train[self.num_cols].isna().values.any():
                 imputer = None
                 if type(self.num_imputation_type) != str:
                     imputer = self.num_imputation_type
@@ -87,7 +91,7 @@ class NAHandler:
                 X_test[self.num_cols] = imputer.transform(X_test[self.num_cols])
 
             # date_cols
-            if self.date_cols and X_train[self.date_cols].isnull().values.any():
+            if self.date_cols and X_train[self.date_cols].isna().values.any():
                 if not warning_issued:
                     warnings.warn("There are missing values in columns with type date", RuntimeWarning)
                     warning_issued = True
@@ -103,14 +107,9 @@ class NAHandler:
                         ((not self.if_impute_not_scaled) and self.scaled_abb not in key) ):
                     continue
                 if (self.scaled_abb in key and i == 0) or (self.scaled_abb not in key and i == 1):
-                    # BŁĄD BYŁ TUTAJ (wycinanie kolumn):
-                    # self.X_dict[f"{key}_{without_na_abb}"] = [X_train[self.num_cols + self.date_cols],
-                    #                                           X_test[self.num_cols + self.date_cols]]
+                   self.X_dict[f"{key}_{without_na_abb}"] = [X_train, X_test]
 
-                    # POPRAWKA (zapisujemy całe przetworzone ramki danych):
-                    self.X_dict[f"{key}_{without_na_abb}"] = [X_train, X_test]
-
-            return self.X_dict
+        return self.X_dict
 
 
 

@@ -1,5 +1,6 @@
 from typing import Union, Any
 
+import numpy as np
 import pandas as pd
 
 from ._infer_types import Typer
@@ -196,6 +197,79 @@ class Preprocessor:
         self.if_impute_cat_not_enc = if_impute_cat_not_enc
         self.if_impute_not_scaled = if_impute_not_scaled
 
+    def __ensure_column_names(self, df, prefix="col"):
+        df = df.copy()
+        new_cols = []
+        used = set()
+
+        for i, c in enumerate(df.columns):
+            if c is None or (isinstance(c, str) and not c.strip()):
+                name = f"{prefix}_{i}"
+            else:
+                name = str(c)
+
+            if name in used:
+                j = 1
+                while f"{name}_{j}" in used:
+                    j += 1
+                name = f"{name}_{j}"
+
+            used.add(name)
+            new_cols.append(name)
+
+        df.columns = new_cols
+        return df
+
+    # def __finite_row_mask(self, df, numeric_cols):
+    #     df.reset_index(drop=True, inplace=True)
+    #     cols = [c for c in numeric_cols if c in df.columns]
+    #     if not cols:
+    #         return pd.Series(True, index=df.index)
+    #
+    #     return ~df.isna().any(axis=1) & ~df[cols].isin([np.inf, -np.inf]).any(axis=1)
+    #
+    # def __drop_non_finite(self, X_dict, y_dict, numeric_cols, key_suffix):
+    #     if len(y_dict) != 1:
+    #         raise ValueError("y_dict must contain exactly one key")
+    #
+    #     y_key = next(iter(y_dict))
+    #     y_list = y_dict[y_key]
+    #
+    #     for x_key, X_list in X_dict.items():
+    #         if not x_key.endswith(key_suffix):
+    #             continue
+    #
+    #         if not X_list and not y_list:
+    #             continue
+    #
+    #         if not X_list or not y_list:
+    #             raise ValueError(
+    #                 f"Inconsistent empty lists for X key '{x_key}' "
+    #                 f"and y key '{y_key}'"
+    #             )
+    #
+    #         all_dfs = X_list + y_list
+    #
+    #         n_rows = {df.shape[0] for df in all_dfs}
+    #         if len(n_rows) != 2: # different lengths for X_train and X_test
+    #             print(n_rows)
+    #             raise ValueError(
+    #                 f"Initial row mismatch for X key '{x_key}' "
+    #                 f"and y key '{y_key}'"
+    #             )
+    #
+    #         mask = pd.Series(True, index=all_dfs[0].index)
+    #
+    #         for df in all_dfs:
+    #             df.reset_index(drop=True, inplace=True)
+    #             df_mask = self.__finite_row_mask(df, numeric_cols)
+    #             mask = mask & df_mask
+    #
+    #         X_dict[x_key] = [df.loc[mask].reset_index(drop=True) for df in X_list]
+    #         y_dict[y_key] = [df.loc[mask].reset_index(drop=True) for df in y_list]
+    #
+    #     return X_dict, y_dict
+
     def fit_transform(self, X_train: "pd.DataFrame | str", y_train: "pd.DataFrame | str", X_test: "pd.DataFrame | str | None" = None,
                       if_return_cols_types_dict: bool = False,
                       operations_abbreviations_dict: dict[str, str] =
@@ -325,11 +399,32 @@ class Preprocessor:
                 X_test.drop(columns=self.cols_to_ignore, inplace=True)
             self.cols_to_ignore = []
 
+        missing_values = np.nan
+        to_replace = [np.inf, -np.inf, pd.NA, pd.NaT, None, 'null', 'Null', 'NULL', 'NAN', 'NaN', 'Nan', 'nan', 'NA', 'Na', 'na']
+        y_train = y_train.replace(to_replace, missing_values)
+
+        broken_cols = list( set(X_train.columns[X_train.nunique() == 1]) | set(X_train.columns[X_train.columns.duplicated()]) |
+                            {col for col in X_train.columns if col.lower().startswith("id") or col.lower().endswith("id")})
+        X_list = [X_train, X_test] if presplitted else [X_train]
+        for i, X in enumerate(X_list):
+            X_list[i].reset_index(drop=True, inplace=True)
+            X_list[i].replace(to_replace, missing_values, inplace=True)
+            X_list[i] = self.__ensure_column_names(X_list[i])
+            X_list[i].drop(columns=broken_cols, inplace=True)
 
         X, y, col_types_dict = Typer(X_train, y_train, self.cols_to_ignore,
                                      self.date_use, self.drop_uninformative_cols, self.enable_advanced_auto_typing,
                                      self.na_col_uninformative_threshold, self.cat_variability_threshold,
-                                     self.num_variability_threshold).infer_types()
+                                     self.num_variability_threshold, self.random_state).infer_types()
+
+
+        # ensuring gradients, distances and dot products no too large and convergence of solvers
+        threshold = 1e6
+        cols = col_types_dict['num'] or []
+        X.loc[:, cols] = X.loc[:, cols].clip(lower=-threshold, upper=threshold)
+        if presplitted:
+            X_test = X_test.loc[:, X.columns]
+            X_test.loc[:, cols] = X_test.loc[:, cols].clip(lower=-threshold, upper=threshold)
 
         cat_abb = operations_abbreviations_dict['cat_abb']
         enc_abb = operations_abbreviations_dict['enc_abb']
@@ -340,7 +435,8 @@ class Preprocessor:
         X_dict = {f'{cat_abb}_{enc_abb}': [], f'{cat_abb}_{not_enc_abb}': []}
         y_dict = {}
         if_classification = False
-        if self.if_encode:
+        date_cols = col_types_dict['date'] if self.date_use else []
+        if self.if_encode and (col_types_dict['bin'] or col_types_dict['ordinal'] or col_types_dict['nominal'] or date_cols):
             X_list_cat_enc, X_list_cat_not_enc, y_list, col_types_dict, if_classification = (
                 Encoder(X, y, X_test, self.date_use, col_types_dict, self.test_size, self.ordinal_cols_enc,
                         self.ordinal_enc_handle_unknown, self.ordinal_enc_unknown_value,
@@ -352,20 +448,27 @@ class Preprocessor:
 
         num_cols = col_types_dict['num']
 
-        if self.if_scale:
+        if self.if_scale and num_cols:
             X_dict, y_dict = Scaler(X_dict, y_dict, num_cols, self.scaler_type, self.if_scale_cat_not_enc,
                                    not_enc_abb, if_classification).transform_scale(scaled_abb)
 
-        date_cols = col_types_dict['date'] if self.date_use else []
-        # print('after scaling', X_dict)
 
-        if self.if_impute:
+        if self.if_impute and (num_cols or date_cols):
             X_dict = NAHandler(X_dict, self.num_imputation_type, self.date_imputation_type, num_cols, date_cols,
                          self.if_impute_cat_not_enc, self.if_impute_not_scaled, not_enc_abb, scaled_abb).impute(without_na_abb)
+
+        # if not f'{cat_abb}_{enc_abb}_{scaled_abb}' in X_dict:
+        #     X_dict[f'{cat_abb}_{enc_abb}_{scaled_abb}'] = X_dict[f'{cat_abb}_{enc_abb}']
+        #
+        # if not f'{cat_abb}_{enc_abb}_{scaled_abb}_{without_na_abb}' in X_dict:
+        #     X_dict[f'{cat_abb}_{enc_abb}_{scaled_abb}_{without_na_abb}'] = X_dict[f'{cat_abb}_{enc_abb}_{scaled_abb}']
 
         if not (self.if_encode or self.if_scale or self.if_impute):
             X_dict = {f'{raw_data_abb}': X}
             y_dict = {f'{raw_data_abb}': y}
+
+        # Remove non-finite values that can be created during e.g. scaling
+        # X_dict, y_dict = self.__drop_non_finite(X_dict, y_dict, num_cols, without_na_abb)
 
         return (X_dict, y_dict, col_types_dict) if if_return_cols_types_dict else (X_dict, y_dict)
 

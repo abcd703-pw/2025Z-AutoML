@@ -2,9 +2,10 @@ import warnings
 
 import numpy as np
 import pandas as pd
-from pandas.api.types import is_bool_dtype, is_integer_dtype
+from pandas.api.types import is_bool_dtype, is_integer_dtype, is_string_dtype
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, TargetEncoder, LabelEncoder
+from sklearn.impute import SimpleImputer
 
 class Encoder:
 
@@ -34,7 +35,7 @@ class Encoder:
 
     def __is_y_bool_or_int(self, s):
         s = s.iloc[:, 0] # y is treated as df, not series
-        return (is_bool_dtype(s) or is_integer_dtype(s) or
+        return (is_bool_dtype(s) or is_integer_dtype(s) or (is_string_dtype(s) and s.nunique() == 2) or
                 s.apply(lambda x: pd.isna(x) or isinstance(x, bool) or isinstance(x, int)).all())
 
     def encode(self):
@@ -58,9 +59,11 @@ class Encoder:
 
         sklearn_encoding_cols = list(set().union(
             *(self.cols_types_dict.get(col_type, []) for col_type in ["bin", "ordinal", 'nominal', 'drop'])))
+        missing_values = np.nan
         for X in X_list_cat_enc:
-            X[sklearn_encoding_cols] = X[sklearn_encoding_cols].astype(str).where(X[sklearn_encoding_cols].notna(), np.nan)
+            X[sklearn_encoding_cols] = X[sklearn_encoding_cols].astype(str).where(X[sklearn_encoding_cols].notna(), missing_values)
 
+        imputer = SimpleImputer(missing_values=missing_values, strategy='constant',fill_value=self.ordinal_enc_unknown_value)
         for cols_type, cols in self.cols_types_dict.items():
             match cols_type:
                 case "date":
@@ -101,7 +104,8 @@ class Encoder:
                 case "bin":
                     if cols:
                         oe = OrdinalEncoder(handle_unknown=self.ordinal_enc_handle_unknown,
-                                            unknown_value=self.ordinal_enc_unknown_value)
+                                            unknown_value=self.ordinal_enc_unknown_value,
+                                            encoded_missing_value=self.ordinal_enc_unknown_value-1)
                         X_list_cat_enc[0][cols] = oe.fit_transform(X_list_cat_enc[0][cols]).astype(cat_cols_encoding_dtype)
                         X_list_cat_enc[1][cols] = oe.transform(X_list_cat_enc[1][cols]).astype(cat_cols_encoding_dtype)
 
@@ -109,7 +113,8 @@ class Encoder:
                     if cols:
                         if self.ordinal_cols_enc is None:
                             oe = OrdinalEncoder(handle_unknown=self.ordinal_enc_handle_unknown,
-                                                                      unknown_value=self.ordinal_enc_unknown_value)
+                                                unknown_value=self.ordinal_enc_unknown_value,
+                                                encoded_missing_value=self.ordinal_enc_unknown_value-1)
                             X_list_cat_enc[0][cols] = oe.fit_transform(X_list_cat_enc[0][cols]).astype(cat_cols_encoding_dtype)
                             X_list_cat_enc[1][cols] = oe.transform(X_list_cat_enc[1][cols]).astype(cat_cols_encoding_dtype)
                         else:
@@ -133,6 +138,7 @@ class Encoder:
                             #            if self.ordinal_cols_enc is None
                             #            else self.ordinal_cols_enc.fit_transform(X[cols]).astype(cat_cols_encoding_dtype))
 
+
                         if self.nominal_cols_enc is None:
                             ohe = OneHotEncoder(handle_unknown=self.nominal_enc_handle_unknown, sparse_output=False, dtype=cat_cols_encoding_dtype)
                             X_list_cat_enc[0] = X_list_cat_enc[0].drop(columns=cols).join(
@@ -141,6 +147,8 @@ class Encoder:
                             X_list_cat_enc[1] = X_list_cat_enc[1].drop(columns=cols).join(
                                 pd.DataFrame(ohe.transform(X_list_cat_enc[1][cols]),
                                              columns=ohe.get_feature_names_out(cols), index=X_list_cat_enc[1].index))
+
+
                         else:
                             X_list_cat_enc[0] = X_list_cat_enc[0].drop(columns=cols).join(
                                 pd.DataFrame(self.nominal_cols_enc.fit_transform(X_list_cat_enc[0][cols]),
@@ -150,12 +158,17 @@ class Encoder:
                                              columns=self.nominal_cols_enc.get_feature_names_out(cols), index=X_list_cat_enc[1].index))
 
 
+                        X_list_cat_enc[1] = X_list_cat_enc[1].reindex(columns=X_list_cat_enc[0].columns, fill_value=0)
+
+
                 case "drop":
                     if cols:
                         # for i, (X, y) in enumerate(zip(X_list_cat_enc, y_list)):
                         te = TargetEncoder(random_state=self.random_state)
-                        X_list_cat_enc[0][cols] = te.fit_transform(X_list_cat_enc[0][cols], y_list[0]).astype(cat_cols_encoding_dtype)
+                        X_list_cat_enc[0][cols] = te.fit_transform(X_list_cat_enc[0][cols], y_list[0].values.ravel()).astype(cat_cols_encoding_dtype)
+                        X_list_cat_enc[0][cols] = imputer.fit_transform(X_list_cat_enc[0][cols]).astype(cat_cols_encoding_dtype)
                         X_list_cat_enc[1][cols] = te.transform(X_list_cat_enc[1][cols]).astype(cat_cols_encoding_dtype)
+                        X_list_cat_enc[1][cols] = imputer.transform(X_list_cat_enc[1][cols]).astype(cat_cols_encoding_dtype)
 
 
         if all(self.__is_y_bool_or_int(y) for y in y_list):
@@ -171,7 +184,7 @@ class Encoder:
         for df in X_list:
             float64_cols = df.select_dtypes(include="Float64").columns
             df[float64_cols] = df[float64_cols].astype(cat_cols_encoding_dtype)
-            df.where(df.notna(), np.nan, inplace=True)
+            df.where(df.notna(), missing_values, inplace=True)
 
         return X_list_cat_enc, X_list_cat_not_enc, y_list, self.cols_types_dict, if_classification
 
